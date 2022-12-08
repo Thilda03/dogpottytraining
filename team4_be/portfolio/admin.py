@@ -16,7 +16,7 @@ class PuppyList(admin.ModelAdmin):
 
 
 class TrainingList(admin.ModelAdmin):
-    list_display = ('customer', 'dog_name', 'training_date')
+    list_display = ('customer', 'dog_name', 'training_date', 'training_notes')
     list_filter = ('customer', 'dog_name')
     search_fields = ('customer', 'dog_name')
     ordering = ['customer']
